@@ -1,0 +1,35 @@
+//VARIALBES
+$offWhite: hsl(240, 78%, 98%);
+$ltGray: hsl(234, 14%, 74%);
+$mdGray: hsl(233, 13%, 49%);
+$dkGray: hsl(232, 13%, 33%);
+$gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+
+
+//SETUP 
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body{ 
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: $offWhite;
+    background-image: url("../Images/bg-bottom.svg"), url("../Images/bg-top.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left, top right;
+    font-family: "Montserrat", sans-serif;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+//FONTS
+p{
+    font-size: 15px;
+}
