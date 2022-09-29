@@ -14,7 +14,7 @@ function Cards({billingPlan}){
 
                     return(
                         <div key={data.key} className={"card card--" + cardType}>
-                            <h3>{data.plan}</h3>
+                            <h2>{data.plan}</h2>
                             <div className="price">
                                 <span>$</span>
                                 <h1>{setPrice}</h1>
