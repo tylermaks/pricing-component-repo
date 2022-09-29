@@ -19,17 +19,35 @@ html, body{
 
 body{
     background-color: $offWhite;
-    background-image: url("../Images/bg-bottom.svg"), url("../Images/bg-top.svg");
+    background-image: url("../Images/bg-top.svg");
     background-repeat: no-repeat;
-    background-position: bottom left, top right;
+    background-position: 55vw top;
     font-family: "Montserrat", sans-serif;
-
-    display: flex; 
-    align-items: center;
-    justify-content: center;
 }
 
 //FONTS
+h1{
+    color: $mdGray;
+    font-size: 1.75rem;
+}
+
+label{
+    color: $ltGray;
+}
+
 p{
     font-size: 15px;
+}
+
+//APP
+.App{
+    padding: 1.5rem;
+}
+
+
+@media screen and (min-width: 50rem) {
+    body{ 
+        background-image: url("../Images/bg-bottom.svg"), url("../Images/bg-top.svg");
+        background-position: bottom left, top right;
+    }
 }
